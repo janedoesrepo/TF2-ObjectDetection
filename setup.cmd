@@ -1,4 +1,4 @@
-@echo on
+@echo off
 
 echo Assuming Anaconda, Windows C++ build tools and Protocol Buffers are installed!
 

@@ -96,10 +96,10 @@ def run():
     
     while True:
         _, img = cap.read()
-        cv2.imshow('Webcam', img)
+        #cv2.imshow('Webcam', img)
             
         rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)    
-        detected_img = show_inference_video(detection_model, rgb_img)
+        detected_img = show_video_inference(detection_model, rgb_img)
         final_img = cv2.cvtColor(detected_img, cv2.COLOR_RGB2BGR)  
         cv2.imshow('Detector', final_img)  
         
