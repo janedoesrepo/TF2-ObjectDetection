@@ -1,7 +1,7 @@
 # Object Detection with TensorFlow 2.3 API on Windows10
 **Last Update: 29.11.2020**
 
-In this tutorial you will learn how to get Object Detection with TensorFlow running on Windows 10. We can use the API to detect objects on Images, Videos or a Webcam.
+In this tutorial you will learn how to get [Object Detection with TensorFlow](https://github.com/tensorflow/models/tree/master/research) running on Windows 10. We can use the API to detect objects on Images, Videos or a Webcam.
 
 # Quick start and usage
 Clone this repository and run `setup.cmd` from your Anaconda Prompt. Make sure all the prerequisites are met.
@@ -16,15 +16,15 @@ As a prerequisite you have to install the following:
  - Windows C++ Build Tools
 
 #### Protocol Buffers for serialization in TensorFlow
-- Download the correct Protocol Buffers for your system from here (https://github.com/protocolbuffers/protobuf/releases) and unzip the folder to `"C:\Program Files"`. I am using "protoc-3.14.0-win64".
+- Download the correct Protocol Buffers for your system from [here](https://github.com/protocolbuffers/protobuf/releases) and unzip the folder to `"C:\Program Files"`. I am using "protoc-3.14.0-win64".
 
 - Add `C:\Program Files\protoc-3.14.0-win64\bin` to your 'PATH' environment variable in order to use the `protoc` command in your shell. Alternatively you can substitute the `protoc` command in the following sections with the full path of protoc.exe which should be `"C:\Program Files\protoc-3.14.0-win64\bin\protoc.exe"`
 
 #### Windows C++ Build Tools
-I had to update my C++ Build Tools in order to get pycocotools running correctly. you can download and install the newest version from here: https://go.microsoft.com/fwlink/?LinkId=691126.
+I had to update my C++ Build Tools in order to get pycocotools running correctly. you can download and install the newest version from [Microsoft](https://go.microsoft.com/fwlink/?LinkId=691126).
 
 ### Set up the virtual environment
-I am using miniconda (https://docs.conda.io/en/latest/miniconda.html), a light weight version of Anaconda. All commands are run on Anaconda Prompt.
+I am using [miniconda](https://docs.conda.io/en/latest/miniconda.html), a light weight version of Anaconda. All commands are run on Anaconda Prompt. Alternatively you can download and execute the `setup.cmd` from this repository.
 
 Create a virtual environment and install the necessary packages:
 ```bash
@@ -36,7 +36,6 @@ python -c "import tensorflow as tf; print(tf.__version__)"
 
 ### Set up the Object Detection API
 Clone the Object Detection repository and install the package:
-
 ```bash
 git clone --depth 1 https://github.com/tensorflow/models
 cd models/research
@@ -46,7 +45,6 @@ pip install .
 
 # Examplary Object Detection
 This part is mainly based on the `object_detection_tutorial.ipynb` notebook from the `tensorflow/models/object_detection/colab_tutorials/` folder. The notebook includes only what is necessary to run in Google Colab though and repeats some of the steps we've already done in the **Setup on Local Machine** section. Besides, it's not 100% up-to-date.
-
 
 ```python
 import cv2
@@ -71,7 +69,6 @@ from object_detection.utils import visualization_utils as vis_util
 ```
 
 Patches:
-
 
 ```python
 # patch tf1 into `utils.ops`
@@ -286,9 +283,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-```
-
-
-```python
-
 ```
