@@ -19,7 +19,6 @@ cd TensorFlow2_ObjectDetection
 setup.cmd
 ```
 
-<<<<<<< HEAD
 Run Object Detection on your webcam.
 
 ```bash
@@ -29,10 +28,6 @@ python webcam.py
 Press `q` to exit the detection window.
 
 # Setup on Local Machine
-=======
-#### Protocol Buffers for serialization in TensorFlow
-- Download the correct Protocol Buffers for your system from [here](https://github.com/protocolbuffers/protobuf/releases) and unzip the folder to `"C:\Program Files"`. I am using "protoc-3.14.0-win64".
->>>>>>> 36db433d0aa44b6783d2c47e287ea6ffad72fd04
 
 ## Installation
 
@@ -49,7 +44,7 @@ As a prerequisite you have to download and install the following:
 I am using [Miniconda](https://docs.conda.io/en/latest/miniconda.html), a light weight version of Anaconda to execute the commands.
 
 Create a virtual environment and install the necessary packages:
-```
+```bash
 conda create -n tf2.3 -y python=3.8
 conda activate tf2.3
 pip install tensorflow==2.3.0 tf_slim opencv-python pycocotools jupyter pywin32==225
