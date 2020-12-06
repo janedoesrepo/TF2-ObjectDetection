@@ -19,7 +19,6 @@ cd TensorFlow2_ObjectDetection
 setup.cmd
 ```
 
-<<<<<<< HEAD
 Run Object Detection on your webcam.
 
 ```bash
@@ -29,10 +28,6 @@ python webcam.py
 Press `q` to exit the detection window.
 
 # Setup on Local Machine
-=======
-#### Protocol Buffers for serialization in TensorFlow
-- Download the correct Protocol Buffers for your system from [here](https://github.com/protocolbuffers/protobuf/releases) and unzip the folder to `"C:\Program Files"`. I am using "protoc-3.14.0-win64".
->>>>>>> 36db433d0aa44b6783d2c47e287ea6ffad72fd04
 
 ## Installation
 
