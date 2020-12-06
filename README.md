@@ -1,7 +1,7 @@
 # Object Detection with TensorFlow 2.3 API on Windows10
 **Last Update: 06.12.2020**
 
-In this tutorial you will learn how to get Object Detection with TensorFlow running on Windows 10. We can use the API to detect objects on Images, Videos or a Webcam.
+In this tutorial you will learn how to get [Object Detection with TensorFlow](https://github.com/tensorflow/models/tree/master/research) running on Windows 10. We can use the API to detect objects on Images, Videos or a Webcam.
 
 # Quickstart
 *Make sure the prerequisites are met*
@@ -19,6 +19,7 @@ cd TensorFlow2_ObjectDetection
 setup.cmd
 ```
 
+<<<<<<< HEAD
 Run Object Detection on your webcam.
 
 ```bash
@@ -28,6 +29,10 @@ python webcam.py
 Press `q` to exit the detection window.
 
 # Setup on Local Machine
+=======
+#### Protocol Buffers for serialization in TensorFlow
+- Download the correct Protocol Buffers for your system from [here](https://github.com/protocolbuffers/protobuf/releases) and unzip the folder to `"C:\Program Files"`. I am using "protoc-3.14.0-win64".
+>>>>>>> 36db433d0aa44b6783d2c47e287ea6ffad72fd04
 
 ## Installation
 
@@ -53,7 +58,6 @@ python -c "import tensorflow as tf; print(tf.__version__)"
 
 ### Set up the Object Detection API
 Clone the Object Detection repository and install the package:
-
 ```bash
 git clone --depth 1 https://github.com/tensorflow/models
 cd models/research

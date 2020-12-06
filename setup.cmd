@@ -1,7 +1,6 @@
 @echo off
 
 echo Assuming Anaconda, Windows C++ build tools and Protocol Buffers are installed!
-
 :: use default name for environment if none is provided
 If not "%~1"=="" if "%~2"=="" goto runscript
 set env-name=TF2-ObjectDetectionAPI
@@ -24,3 +23,4 @@ cd models/research
 protoc object_detection/protos/*.proto --python_out=.
 pip install .
 cd ../..
+echo For Object Detection with your webcam run `python webcam.py`
