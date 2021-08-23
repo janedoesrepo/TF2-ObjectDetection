@@ -1,4 +1,4 @@
-# Object Detection with TensorFlow 2.3 API on Windows10
+# Object Detection with TensorFlow 2.3 API on Windows 10
 **Last Update: 06.12.2020**
 
 In this tutorial you will learn how to get [Object Detection with TensorFlow](https://github.com/tensorflow/models/tree/master/research) running on Windows 10. We can use the API to detect objects on Images, Videos or a Webcam.
